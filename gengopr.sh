@@ -4,7 +4,7 @@
 CURRENT=`pwd`
 BASENAME=`basename "$CURRENT"`
 
-mkdir build pkg config test docs
+mkdir build pkg config test docs vendor
 mkdir -p internal/app/$BASENAME
 mkdir -p cmd/$BASENAME
 
@@ -36,5 +36,3 @@ func main() {
 EOM
 
 go mod init $BASENAME
-
-go mod vendor
